@@ -1,17 +1,17 @@
 package piggybank;
 
 import java.util.*;
-
-import jdk.javadoc.internal.doclets.formats.html.SourceToHTMLConverter;
-
 import java.text.DecimalFormat;
 
 public class Main {
+
+    public static void main(String[], args) {
     // copy pasted from ReadMe:
     DecimalFormat fp = new DecimalFormat("$###,###.00");
     double sum = 0;
 
     ArrayList<AbstractMoney> myPiggy = new ArrayList<>();
+
     //quantities pulled from ReadMe:
     myPiggy.add(new Quarter());
     myPiggy.add(new Dime());
@@ -33,4 +33,5 @@ public class Main {
     System.out.println();
 
     System.out.println("The piggy bank holds " + fp.format(sum));
+}
 }

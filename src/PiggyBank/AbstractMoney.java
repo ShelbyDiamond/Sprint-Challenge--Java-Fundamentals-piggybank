@@ -5,7 +5,7 @@ public abstract class AbstractMoney {
     private int inventory;
     private String name;
 
-    public AbstractCurrency(double denomination, int inventory, String name) {
+    public AbstractMoney(double denomination, int inventory, String name) {
         this.denomination = denomination;
         this.inventory = inventory;
         this.name = name;
