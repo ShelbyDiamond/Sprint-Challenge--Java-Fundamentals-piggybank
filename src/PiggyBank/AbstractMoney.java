@@ -42,4 +42,14 @@ public abstract class AbstractMoney {
       public void setName(String name) {
         this.name = name;
       }
+
+      //methods
+      public double getSum() {
+          return inventory * denomination;
+      }
+
+      @Override
+      public String toString() {
+          return inventory + " " + name;
+      }
 }
